@@ -26,7 +26,6 @@ error: language item required, but not found: `eh_personality`
   |
   = note: this can occur when a binary crate with `#![no_std]` is compiled for a target where `eh_personality` is defined in the standard library
   = help: you may be able to compile for a target that doesn't need `eh_personality`, specify a target with `--target` or in `.cargo/config`
-
 ```
 
 Fixed by adding the following to Cargo.toml:
@@ -50,6 +49,6 @@ https://github.com/Rahix/avr-hal
 
 ### Useful links
 
-AVR Rust book: https://book.avr-rust.com/001-introduction.html
-Language item error explanation: https://os.phil-opp.com/freestanding-rust-binary/#the-1
-Using rust-toolchain file: https://rust-lang.github.io/rustup/overrides.html#the-toolchain-file
+AVR Rust book: https://book.avr-rust.com/001-introduction.html  
+Language item error explanation: https://os.phil-opp.com/freestanding-rust-binary/#the-1  
+Using rust-toolchain file: https://rust-lang.github.io/rustup/overrides.html#the-toolchain-file  
